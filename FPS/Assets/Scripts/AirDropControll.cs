@@ -27,10 +27,26 @@ public class AirDropControll : MonoBehaviour
         if(SpawnTime > 10)
         {
             RandomizeSpawn = Random.value;
-            if(RandomizeSpawn >= 0 && RandomizeSpawn < 0.16)
+            if (RandomizeSpawn >= 0 && RandomizeSpawn < 0.16)
             {
-                Instantiate(Plane ,SpawnA.position, SpawnA.rotation);
-            }            
+                Instantiate(Plane, SpawnA.position, SpawnA.rotation);
+            }
+            if (RandomizeSpawn >= 0.16 && RandomizeSpawn < 0.32)
+            {
+                Instantiate(Plane, SpawnB.position, SpawnB.rotation);
+            }
+            if (RandomizeSpawn >= 0.32 && RandomizeSpawn < 0.48)
+            {
+                Instantiate(Plane, SpawnC.position, SpawnC.rotation);
+            }
+            if (RandomizeSpawn >= 0.48 && RandomizeSpawn < 0.64)
+            {
+                Instantiate(Plane, SpawnD.position, SpawnD.rotation);
+            }
+            if (RandomizeSpawn >= 0.64)
+            {
+                Instantiate(Plane, SpawnE.position, SpawnE.rotation);
+            }
         }
 
         if(SpawnTime > 10.1)
