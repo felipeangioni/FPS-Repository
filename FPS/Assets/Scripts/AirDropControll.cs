@@ -29,7 +29,7 @@ public class AirDropControll : MonoBehaviour
             RandomizeSpawn = Random.value;
             if(RandomizeSpawn >= 0 && RandomizeSpawn < 0.16)
             {
-                Instantiate(Plane ,SpawnA.position, SpawnB.rotation);
+                Instantiate(Plane ,SpawnA.position, SpawnA.rotation);
             }            
         }
 
