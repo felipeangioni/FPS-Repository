@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class AirDrop : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject Parachute;
+    public GameObject BlueSmoke;
+
     void Start()
     {
-        
+        BlueSmoke.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Parachute.SetActive(false);
+        BlueSmoke.SetActive(true);
     }
 }
